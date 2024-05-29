@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home </a></li>
+            <li><a href="./Languages.html">Languages </a></li>
+			<li><a href="./Application.html">Register</a><li>
+			<li><a href="./Purchase.html"  style="background-color:#151B54">Purchase</a></li>
+            <li><a href="./subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>Purchase For a Exams</h1>
+        <p>Select the Language you want to Apply for a exam. You will get a 15% discount for apply fee above $500. Hurry up!</p>
+		
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <table style="width:100%">
+            <!--  -->
+            <tr>
+              <th>Languages</th>
+              <th>Levels</th>
+              <th>Exam Days</th>
+			  <th>Number of students(max 5)</th>
+              <th>Fees ($)</th>
+            </tr>
+
+            <tr>
+           
+            <!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    English
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3, IELTS, TOFEL -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+                <input type="radio" id="m" name="size" value="IELTS">
+                <label for="m">IELTS</label><br>
+
+                <input type="radio" id="s" name="size" value="TOFEL">
+                <label for="s">TOFEL</label><br>
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction()">Get Price</button>
+		<p id="result"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Japan
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions2" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction2()">Get Price</button>
+		<p id="result2"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+			
+			<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Spain
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions3" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction3()">Get Price</button>
+		<p id="result3"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+			
+			<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Russia
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions4" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction4()">Get Price</button>
+		<p id="result4"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+			
+			<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Korea
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions5" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction5()">Get Price</button>
+		<p id="result5"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+			
+			<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    China
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions6" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction6()">Get Price</button>
+		<p id="result6"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+			
+			<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                   Turkish
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions7" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction7()">Get Price</button>
+		<p id="result7"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+			
+			<!-- Language -->
+            <td>
+                <label class="container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    German
+                </label>
+            </td>
+
+            <!-- Levels -->
+            <!-- Level 1,Level 2, Level 3 -->
+            <td>
+                <input type="radio" id="xxl" name="size" value="Level 1">
+                <label for="xxl">Level 1</label><br>
+
+                <input type="radio" id="xl" name="size" value="Level 2">
+                <label for="xl">Level 2</label><br>
+
+                <input type="radio" id="l" name="size" value="Level 3">
+                <label for="l">Level 3</label>
+
+            </td>
+
+            <!-- Days -->
+            <td><input type="radio" id="black" name="colour" value="Monday">
+                <label for="black">Monday</label><br>
+
+                <input type="radio" id="white" name="colour" value="Tuesday">
+                <label for="white">Tuesday</label><br>
+
+                <input type="radio" id="gray" name="colour" value="Wednesday">
+                <label for="gray">Wednesday</label>
+
+                <input type="radio" id="red" name="colour" value="Thursday">
+                <label for="red">Thursday</label>
+
+                <input type="radio" id="blue" name="colour" value="Friday">
+                <label for="blue">Friday</label>
+            </td>
+            
+            <!-- Number of Students -->
+            <td>
+				<div class="dropdown">
+                    <!-- <div class="dropdown-content"> -->
+                 <form name="myForm">
+	<select id="SelectOptions8" class="dropbtn">
+  <option>Number of Students</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+	</select>
+		</form>
+		</div>
+        
+            </td>
+
+            <!-- Cost -->
+            <td>
+		 <div id="cost_t">
+			<form>
+                <button type="button" onclick="priceFunction8()">Get Price</button>
+		<p id="result8"> </p>
+		</form>
+		</div>
+            </td>
+
+            </tr>
+            <!--  -->
+            
+            <tr>
+                <th colspan="3">Total Cost(After 15% discount)</th>
+                <th><button type="button" onclick="Total()">Calculate</button></th>
+                <th><p id="total"> </p></th>     
+            </tr>
+            
+          </table>
+
+          <br><br><br><br><br><br>
+		  <div class="row">
+            <div class="column"><img src="./images/flags.jpeg"  width="1500" height="250"></div>
+			</div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer2">
+        <p>Copyright © 2021 Ruchira Dissanayaka | All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

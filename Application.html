@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+		    <li><a href="./index.html">Home </a></li>
+            <li><a href="./Languages.html">Languages</a></li>
+			<li><a href="./Application.html" style="background-color:#151B54">Register</a><li>
+            <li><a href="./Purchase.html" >Purchase</a></li>
+			
+            <li><a href="./subscribe.html">Subscribe</a></li>
+        </ul>
+    </nav>
+	
+    <!-- Header -->
+    <div id="header">
+        <h1>Registration for a exam</h1>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <h2>Fill all empty field for register to Exam<br>
+            Don't Provide Fake informations !</h2>
+			
+        
+		<form name="subscribeForm" onsubmit="return validateForm()">
+		
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+			
+			<label for="Gender">Gender:</label><br>
+            <input type="text" id="Gender" name="Gender"><br><br>
+			
+			<label for="language">language:</label><br>
+            <input type="text" id="language" name="language"><br><br>
+			
+			<label for="Exam Level">Exam Level:</label><br>
+            <input type="text" id="Exam Level" name="Exam Level"><br><br>
+			
+			<label for="Nationality">Nationality:</label><br>
+            <input type="text" id="Nationality" name="Nationality"><br><br>
+			
+			<label for="Phone Number">Phone Number:</label><br>
+            <input type="text" id="Phone Number" name="Phone Number"><br><br>
+			
+			<label for="Address">Address:</label><br>
+            <input type="text" id="Address" name="Address"><br>
+			
+			<label for="School Or University Name">School Or University Name:</label><br>
+            <input type="text" id="School Or University Name" name="School Or University Name"><br><br>
+			
+		    <label for="Passport or ID number">Passport or ID number:</label><br>
+            <input type="text" id="Passport or ID number" name="Passport or ID number"><br><br>
+			
+			<label for="Password">Password:</label><br>
+            <input type="text" id="Password" name="Password"><br>
+
+            <label for="Comfirm your password">Comfirm your password:</label><br>
+            <input type="text" id="Comfirm your password" name="Comfirm your password"><br><br>
+
+            <div id="Register">
+			<form>
+                <button type="button" onclick="validateForm1()">Register</button>
+		<p id="result1"> </p>
+		</form>
+		</div>
+			
+			
+        </form>
+        
+        <br/><br/><br/><br/>
+		<div class="row">
+            <div class="column"><img src="./images/flags.jpeg"  width="1500" height="250"></div>
+			</div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer2">
+        <p>Copyright © 2021 Ruchira Dissanayaka | All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

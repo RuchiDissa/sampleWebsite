@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+		    <li><a href="./index.html">Home </a></li>
+            <li><a href="./Languages.html"  >Languages</a></li>
+			<li><a href="./Application.html">Register</a><li>
+            <li><a href="./Purchase.html" >Purchase</a></li>
+			
+            <li><a href="./subscribe.html" style="background-color:#151B54">Subscribe</a></li>
+        </ul>
+    </nav>
+	
+    <!-- Header -->
+    <div id="header">
+        <h1>Subscribe</h1>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <h2>Subscribe here to learn more about our Service.<br>
+            Comment on our Courses and get exclusive discounts !</h2>
+    
+        
+		<form name="subscribeForm" onsubmit="return validateForm()">
+		
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+			
+			<label for="comment">Comment:</label><br>
+            <input type="text" id="comment" name="comment"><br><br>
+
+            <input type="submit" value="Submit">
+			
+			
+        </form>
+        
+        <br/><br/><br/><br/>
+		<div class="row">
+            <div class="column"><img src="./images/flags.jpeg"  width="1500" height="250"></div>
+			</div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer2">
+        <p>Copyright © 2021 Ruchira Dissanayaka | All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
